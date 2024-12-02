@@ -1,0 +1,922 @@
+    1  ls()
+    2  ls
+    3  sudo yum install R
+    4  R --vanilla
+    5  wget https://github.com/rcedgar/muscle/releases/download/v5.2/muscle-linux-x86.v5.2
+    6  ls
+    7  chmod +x muscle-linux-x86.v5.2
+    8  sudo cp muscle-linux-x86.v5.2 /usr/bin/muscle
+    9  muscle
+   10  ls
+   11  rm muscle-linux-x86.v5.2 
+   12  sudo yum install iqtree
+   13   wget https://github.com/iqtree/iqtree2/releases/download/v2.3.6/iqtree-2.3.6-Linux-intel.tar.gz
+   14  gunzip iqtree-2.3.6-Linux-intel.tar.gz
+   15  tar -xvf iqtree-2.3.6-Linux-intel.tar
+   16  ls
+   17  cd iqtree-2.3.6-Linux-intel/
+   18  ls
+   19  cd bin
+   20  sudo cp iqtree2 /usr/bin/iqtree
+   21  cd
+   22  iqtree
+   23  ls
+   24  rm iqtree*
+   25  rm -rf iqtre*
+   26  ls
+   27  R --vanilla
+   28  sudo R --vanilla
+   29  ls
+   30  tmux
+   31  sudo yum install tmux
+   32  mamba
+   33  conda
+   34  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   35  bash Miniforge3-$(uname)-$(uname -m).sh
+   36  ls
+   37  sudo bash Miniforge3-$(uname)-$(uname -m).sh
+   38  exit
+   39  mamba
+   40  nano .bashrc
+   41  exit
+   42  mamba
+   43  mamba install -c bioconda spades
+   44  mamba install -c bioconda sickle-trim
+   45  sudo mamba install -c bioconda sickle-trim
+   46  conda init --reverse --dry-run
+   47  conda init --reverse
+   48  CONDA_BASE_ENVIRONMENT=$(conda info --base)
+   49  echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
+   50  # Warning, the rm command below is irreversible!
+   51  # check the output of the echo command above
+   52  # To make sure you are deleting the correct directory
+   53  rm -rf ${CONDA_BASE_ENVIRONMENT}
+   54  conda init --reverse --dry-run
+   55  conda init --reverse
+   56  CONDA_BASE_ENVIRONMENT=$(conda info --base)
+   57  echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
+   58  sudo rm -rf ${CONDA_BASE_ENVIRONMENT}
+   59  sudo rm -f "${HOME}/.condarc"
+   60  sudo rm -fr ${HOME}/.conda
+   61  exit
+   62  ls
+   63  bash Miniforge3-$(uname)-$(uname -m).sh
+   64  exit
+   65  sudo dnf install xorg-x11-xauth -y
+   66  touch ~/.Xauthority
+   67  sudo chown bio312-user:bio312-user ~/.Xauthority
+   68  chmod 600 ~/.Xauthority
+   69  exit
+   70  mamba
+   71  ls /usr/bin/miniforge*
+   72  mamba install -c bioconda spades
+   73  mamba install -c bioconda sickle-trim
+   74  sickle
+   75  mamba install bioconda::pargenes
+   76  mamba create -n pargenes-env python=3.8
+   77  conda activate pargenes-env
+   78  mamba install bioconda::pargenes
+   79  sudo amazon-linux-extras install java-openjdk11 -y
+   80  sudo yum install java-openjdk11 -y
+   81  sudo yum install xclock xterm
+   82  xclock
+   83  sudo dnf install java-11-openjdk -y
+   84  source deactivate
+   85  mamba deactivate
+   86  sudo dnf install java-11-openjdk -y
+   87  sudo dnf install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps -y
+   88  sudo dnf install xterm -y
+   89  java -version
+   90  sudo dnf install xeyes -y
+   91  sudo dnf install xclock -y
+   92  sudo dnf install epel-release -y
+   93  sudo dnf install xorg-x11-utils -y
+   94  mamba install -c bioconda igvtools
+   95  xclock &
+   96  ls
+   97  cd miniforge3/
+   98  ls
+   99  cd bin
+  100  ls
+  101  ls igv*
+  102  cd igvtools
+  103  cd
+  104  ls
+  105  mkdir tools
+  106  cd tools
+  107  wget https://data.broadinstitute.org/igv/projects/downloads/2.16/IGV_Linux_2.16.2_WithJava.zip
+  108  unzip IGV_Linux_2.16.2_WithJava.zip
+  109  cd
+  110  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  111  sudo nano /etc/ssh/sshd_config
+  112  sudo systemctl restart sshd
+  113  gcc --version
+  114  ls
+  115  git clone --recursive https://github.com/BenoitMorel/AleRax
+  116  exit
+  117  sudo dnf install xorg-x11-xauth -y
+  118  echo $DISPLAY
+  119  export DISPLAY=:10.0  # Adjust the display number if necessary
+  120  xterm &
+  121  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  122  sudo dnf search x11
+  123  sudo dnf search xclock
+  124  sudo dnf search xterm
+  125  sudo dnf install xorg-x11-server-utils xorg-x11-apps -y
+  126  sudo dnf install xorg-x11-server-Xvfb -y
+  127  Xvfb :99 -screen 0 1024x768x16 &
+  128  export DISPLAY=:99
+  129  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  130  wkhtmltopdf --version
+  131  exit
+  132  wkhtmltopdf --version
+  133  exit
+  134  exit
+  135  ```bash
+  136   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  137  ```
+  138  echo 'Hello World'
+  139  MYGIT="s2-pzampieron"
+  140  echo $MYGIT
+  141  echo my git username is $MYGIT
+  142  echo "export MYGIT=$MYGIT" >> ~/.bashrc
+  143  ```bash
+  144   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  145  ```
+  146  ```bash
+  147   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  148  ```
+  149  tmux
+  150  ```bash
+  151  git clone https://github.com/Bio312/lab02-s2-pzampieron'''
+  152  ```bash
+  153  `
+  154  echo 'Hello World'
+  155  ```
+  156  ``
+  157  echo 'Hello World'
+  158  ```
+  159  ```
+  160  echo 'Hello World'
+  161  ```
+  162  ```bash
+  163  echo 'Hello World'
+  164  ```
+  165  echo $MYGIT
+  166  MYGIT="path/to/your/git/repo"
+  167  echo $MYGIT
+  168  ```
+  169  MYGIT="s2-pzampieron"
+  170  ```
+  171  [200~echo "bio312isCOOL!" | sudo -S sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && sudo systemctl restart sshd.service~
+  172  echo "bio312isCOOL!" | sudo -S sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && sudo systemctl restart sshd.service
+  173  tmux
+  174  git clone https://github.com/Bio312/lab02-s2-pzampieron
+  175  1s
+  176  ls
+  177  echo $DISPLAY```bash
+  178   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  179  ```
+  180  ```bash
+  181   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  182  ```
+  183  ```bash
+  184  echo 'Hello World'
+  185  ```
+  186  ```bash
+  187  echo 'Hello World'
+  188  ``
+  189  echo 'Hello World'
+  190  ```
+  191  ```bash
+  192  git clone https://github.com/Bio312/lab02-myusername
+  193  ```bash
+  194  tmux a
+  195  [bio312-user@ip-172-31 ~]
+  196  [bio312-user@ip-3.232.50.102 ~]
+  197  [bio312-s2-pzampieron@ip-3.232.50.102 ~]
+  198  ```bash
+  199  git clone https://github.com/Bio312/lab02-s2-pzampieron
+  200  ```
+  201  ls
+  202  ls
+  203  git clone https://github.com/Bio312/lab02-s2-pzampieron
+  204  echo 'Hello World'
+  205  echo $MYGIT
+  206  echo my git username is $MYGIT
+  207  echo "export MYGIT=$MYGIT" >> ~/.bashrc
+  208  ``` echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  209  ```
+  210  echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  211  [bio312-user@ip-172-31 ~]
+  212  cd
+  213  pwd
+  214  cd data
+  215  ls
+  216  cat animal.txt
+  217  cd
+  218  cd..
+  219  ls
+  220  ls -l
+  221  df -h
+  222  df
+  223  df -h
+  224  cd ~/lab02-$MYGIT
+  225  ls
+  226  ncbi-acc-download -h
+  227  ncbi-acc-download -F genbank "NW_003143794.1"
+  228  ls
+  229  less
+  230  less NW_003143794.1.gbk
+  231  uence name
+  232  ACTGACTGACTGACTGACTG
+  233  >sequence name
+  234  ACTGACTGACTGACTGACTG
+  235  ncbi-acc-download -F fasta "NW_003143794.1"
+  236   more NW_003143794.1
+  237   more NW_003143794.1.fa
+  238  less NW_003143794.1.FA
+  239  less NW_003143794.1.fa
+  240  cat NW_003143794.1.fa
+  241  more NW_003143794.1
+  242  ncbi-acc-download -F gff3 "NW_003143794.1"
+  243  filterGFF LOC100375093 NW_003143794.1.gff
+  244  gt gff3 -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  245  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o LOC100375093.sorted.counts.gff LOC100375093.sorted.gff
+  246  less LOC100375093.sorted.counts.gff
+  247  gt gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  248  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o NW_003143794.1.counts.txt NW_003143794.1.sorted.gff
+  249  less NW_003143794.1.counts.txt
+  250  grep CDS LOC100375093.X1.gff > LOC100375093.X1.cds.gff
+  251  bedtools getfasta -s -fi NW_003143794.1.fa -fo LOC100375093.X1.cds.fa -bed LOC100375093.X1.cds.gff
+  252  less LOC100375093.X1.cds.fa
+  253  less LOC100375093.X1.cds.
+  254  less LOC100375093.X1.cds.fa
+  255  union LOC100375093.X1.cds.fa -outseq LOC100375093.X1.cds.union.fa
+  256  transeq LOC100375093.X1.cds.union.fa LOC100375093.X1.protein.fa
+  257  less LOC100375093.X1.protein.fa
+  258  history > lab2.commandhistory.txt
+  259  git status
+  260  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore
+  261  awk '!NF || !seen[$0]++' .gitignore
+  262  git add .
+  263  git status
+  264  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  265  git status
+  266  git pull --no-edit
+  267  gut status
+  268  git status
+  269  git push
+  270  git status
+  271  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  272  git config --global user.name "s2-pzampieron"
+  273  git config --global user.email "paul.zampieron@stonybrook.edu"
+  274  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  275  git status
+  276  git pull --no-edit
+  277  git status
+  278  git pull --no-edit
+  279  git status
+  280  git push
+  281  pwd
+  282  history > lab2.commandhistory.txt
+  283  git status
+  284  git pull --no-edit
+  285  git status
+  286  history > lab2.commandhistory.txt
+  287  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore
+  288  awk '!NF || !seen[$0]++' .gitignore
+  289  git add
+  290  git add .
+  291  git status
+  292  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  293  git status
+  294  git pull --no-edit
+  295  cd ~/lab03-$MYGIT
+  296  pwd
+  297  history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  298  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  299  git add .
+  300  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  301  git pull --rebase=false --no-edit
+  302  git push
+  303  cd ~/lab03-$MYGIT/ruvB-like
+  304  pwd
+  305  ncbi-acc-download -F fasta -m protein "NP_003698.1"
+  306  blastp -db ../allprotein.fas -query NP_003698.1.fa -outfmt 0 -max_hsps 1 -out ruvB-like.blastp.typical.out
+  307  blastp -db ../allprotein.fas -query NP_003698.1.fa -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle" -max_hsps 1 -out ruvB-like.blastp.detail.out
+  308  awk '{if ($6 < 1e-30) print $1}' ruvB-like.blastp.detail.out > ruvB-like.blastp.detail.filtered.out
+  309  wc -l ruvB-like.blastp.detail.filtered.out
+  310  grep -o -E "^[A-Z]\.[a-z]+" ruvB-like.blastp.detail.filtered.out | sort | uniq -c
+  311      2 C.carcharias
+  312        1 C.mydas
+  313        3 D.rerio
+  314        2 E.caballus
+  315        2 F.catus
+  316        2 G.aculeatus
+  317        1 G.gallus
+  318        2 H.sapiens
+  319        3 S.salar
+  320        2 S.townsendi
+  321        4 X.laeviscd ~/lab03-$MYGIT
+  322  cd ~/lab03-$MYGIT
+  323  pwd
+  324  history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  325  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  326  git add .
+  327  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  328  git pull --rebase=false --no-edit
+  329  git push
+  330  cd ~/lab03-$MYGIT
+  331  pwd
+  332  history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  333  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  334  git add .
+  335  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  336  git pull --rebase=false --no-edit
+  337  git push
+  338  hello world
+  339  ls
+  340  pwd
+  341  file>save
+  342  README>save
+  343  git push -u origin master
+  344  file>save as
+  345  README_filled.md
+  346  ls
+  347  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  348  git add
+  349  git add .
+  350  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  351  git commit
+  352  git pull --rebase=false --no-edit
+  353  git push
+  354  hello world
+  355  git clone https://github.com/Bio312/lab04-$MYGIT
+  356  cd lab04-$MYGIT
+  357  ls
+  358  nano ~/lab04-$MYGIT/toy.fas 
+  359  muscle -align ~/lab04-$MYGIT/toy.fas -output ~/lab04-$MYGIT/toy.al.fas
+  360  alv -kli  ~/lab04-$MYGIT/toy.al.fas
+  361  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/toy.al.fas -output sim
+  362  lignbuddy -pi ~/lab04-$MYGIT/toy.al.fas
+  363  alignbuddy -pi ~/lab04-$MYGIT/toy.al.fas
+  364  alignbuddy -pi ~/lab04-$MYGIT/toy.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  365       END{ print(100*sum/num) } '
+  366  mkdir ~/lab04-$MYGIT/globins
+  367  cd ~/lab04-$MYGIT/globins
+  368  pwd
+  369  seqkit grep --pattern-file ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/globins.homologs.fas
+  370  less
+  371  less globins.homologs.fas
+  372  kit grep --pattern-file ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/globins.homologs.fas
+  373  less globins.homologs.fas
+  374  seqkit grep --pattern-file ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/globins.homologs.fas
+  375  less globins.homologs.fas
+  376  muscle -align ~/lab04-$MYGIT/globins/globins.homologs.fas -output ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  377  alv -kli  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | less -RS
+  378  alv -kli --majority ~/lab04-$MYGIT/globins/globins.homologs.al.fas | less -RS
+  379  alv -h
+  380   Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  381  alignbuddy  -al  ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  382  alignbuddy -trm all  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | alignbuddy  -al
+  383  alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/globins/globins.homologs.al.fas | alignbuddy  -al
+  384  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/globins/globins.homologs.al.fas -output sim
+  385  alignbuddy -pi ~/lab04-$MYGIT/globins/globins.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  386       END{ print(100*sum/num) } '
+  387  pwd
+  388  cd
+  389  pwd
+  390  cd ~/lab04-$MYGIT/
+  391  pwd
+  392  mkdir ~/lab04-$MYGIT/RuvB-like
+  393  cd mkdir ~/lab04-$MYGIT/RuvB-like
+  394  cd ~/lab04-$MYGIT/RuvB-like
+  395  pwd
+  396  seqkit grep --pattern-file ~/lab03-$MYGIT/ruvB-like/ruvB-like.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas > ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.fas
+  397  muscle -align ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.fas -output ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas
+  398  alv -kli ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | less -RS
+  399  alv -kli --majority ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | less -RS
+  400  alignbuddy -al ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas
+  401  alignbuddy -pi ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  402  END{ print(100*sum/num) } '
+  403  Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas
+  404  alv -kli --majority ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas
+  405  alignbuddy -trm all  ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | alignbuddy  -al
+  406  alv -kli --majority ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas
+  407  alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | alignbuddy  -al
+  408  alignbuddy -pi ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas
+  409  alignbuddy -pi ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  410       END{ print(100*sum/num) } '
+  411  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas -output sim
+  412  history > lab4.commandhistory.txt
+  413  cd ~/lab04-$MYGIT
+  414  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  415  git add .
+  416  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  417  git pull --rebase=false --no-edit
+  418  git push
+  419  git clone https://github.com/Bio312/lab05-$MYGIT
+  420  cd lab05-$MYGIT
+  421  ls
+  422  pwd
+  423  echo "((You,your_sister),(your_cousin,your_other_cousin));" > ~/lab05-$MYGIT/family.tre
+  424  nw_display ~/lab05-$MYGIT/family.tre 
+  425  nw_display -s ~/lab05-$MYGIT/family.tre > ~/lab05-$MYGIT/family.tre.svg
+  426  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/family.tre ~/lab05-$MYGIT/family.unrooted.pdf 1 35
+  427  echo "((You,Sibling),(Cousin1,Cousin2),Friend);" > ~/lab05-$MYGIT/your_family.tre
+  428  nw_display ~/lab05-$MYGIT/your_family.tre
+  429  echo "((Hemichordata,Echinodermata),(Cephalochordata,(Urochordata,(Agnatha,(Chondrichthyes,((Amphibia,(Sauropsida,Mammalia)Amniota)Tetrapoda,Actinopterygii)Euteleostomi)Gnathostomata)Vertebrata))Chordata)Deuterostomia;" > ~/lab05-$MYGIT/subphyla.tre
+  430  nw_display ~/lab05-$MYGIT/subphyla.tre
+  431  echo "((Hemichordata,Echinodermata),(Cephalochordata,(Urochordata,(Agnatha,(Chondrichthyes,((Amphibia,Mammalia),Actinopterygii))))));" | nw_display -
+  432  nw_reroot subphyla.tre Vertebrata >subphyla.reroot.tre   
+  433  nw_display subphyla.reroot.tre
+  434  echo "((((((F.catus,E.caballus)Laurasiatheria,H.sapiens)Boreoeutheria,(S.townsendi,(C.mydas,G.gallus)Archelosauria)Sauria)Amniota,X.laevis)Tetrapoda,(D.rerio,(S.salar,G.aculeatus)Euteleosteomorpha)Clupeocephala)Euteleostomi,C.carcharias)Gnathostomata;"  > ~/lab05-$MYGIT/species.tre
+  435  nw_display ~/lab05-$MYGIT/species.tre
+  436  nw_display -s ~/lab05-$MYGIT/species.tre > ~/lab05-$MYGIT/species.tre.svg
+  437  convert ~/lab05-$MYGIT/species.tre.svg ~/lab05-$MYGIT/species.tre.pdf
+  438  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/species.tre ~/lab05-$MYGIT/species.unrooted.pdf 0.4 35
+  439  3. Constructing a
+  440  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/species.tre ~/lab05-$MYGIT/species.unrooted.pdf 0.4 35
+  441  mkdir ~/lab05-$MYGIT/globins
+  442  cd ~/lab05-$MYGIT/globins  
+  443  sed 's/ /_/g'  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/globins/globins.homologsf.al.fas
+  444  iqtree -s ~/lab05-$MYGIT/globins/globins.homologsf.al.fas -bb 1000 -nt 2 
+  445  cd ~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  446  cd~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  447  ~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  448  cd~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  449  cd/~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  450  ~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  451  ~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtre
+  452  nw_display ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile
+  453  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile.pdf 0.4 15
+  454  gotree reroot midpoint -i ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile -o ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile
+  455  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile  | nw_display -
+  456  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s  >  ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile.svg -
+  457  convert  ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile.pdf
+  458  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile | nw_topology - | nw_display -s  -w 1000 > ~/lab05-$MYGIT/globins/globins.homologsf.al.midCl.treefile.svg -
+  459  convert ~/lab05-$MYGIT/globins/globins.homologsf.al.midCl.treefile.svg ~/lab05-$MYGIT/globins/globins.homologsf.al.midCl.treefile.pdf
+  460  nw_reroot ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile H.sapiens_HBG1_hemoglobin_subunit_gamma1 H.sapiens_HBG2_hemoglobin_subunit_gamma2 H.sapiens_HBB_hemoglobin_subunit_beta H.sapiens_HBD_hemoglobin_subunit_delta >~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile
+  461  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile | nw_topology - | nw_display -s  -w 1000 > ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile.svg -
+  462  convert ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile.svg ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile.pdf
+  463  ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  464  sed 's/ /_/g'  ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.fas
+  465  mkdir ~/lab05-$MYGIT/RuvB-like
+  466  cd ~/lab05-$MYGIT/globins
+  467  cd ~/lab05-$MYGIT/RuvB-like
+  468  sed 's/ /_/g'  ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.al.fas | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.fas
+  469  iqtree -s ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.fas -bb 1000 -nt 2 
+  470  nw_display ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.fas.treefile
+  471  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.fas.treefile ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.fas.treefile.pdf 0.4 15
+  472  gotree reroot midpoint -i ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.fas.treefile -o ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile
+  473  nw_order -c n ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile  | nw_display -
+  474  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s  >  ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile.svg -
+  475  convert  ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile.pdf
+  476  nw_order -c n ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile | nw_topology - | nw_display -s  -w 1000 > ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.midCl.treefile.svg -
+  477  convert ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.midCl.treefile.svg ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.midCl.treefile.pdf
+  478  history > lab5.commandhistory.txt
+  479  cd ~/lab05-$MYGIT
+  480  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  481  git add .
+  482  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  483  git pull --no-edit
+  484  git push
+  485  cd ~/lab05-$MYGIT
+  486  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignoregit add .
+  487  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  488  git add .
+  489  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  490  git pull --no-edit
+  491  git push
+  492  hello world
+  493  mamba create -n my_python27_env python=2.7
+  494  conda activate my_python27_env
+  495  mamba install -y ete3
+  496  git clone https://github.com/Bio312/lab06-$MYGIT
+  497  cd lab06-$MYGIT
+  498  ls
+  499  pwd
+  500  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar --help  
+  501  echo "(frog,(horse,cat)Mammalia)Tetrapoda;" > toyspecies.tre
+  502  echo "((frog_Alpha,(horse_Alpha,cat_Alpha)),(frog_Beta,horse_Beta));" > toygenetree.tre
+  503  nw_display ~/lab06-$MYGIT/toyspecies.tre
+  504  java -jar  ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -s ~/lab06-$MYGIT/toyspecies.tre -g ~/lab06-$MYGIT/toygenetree.tre --reconcile --speciestag prefix --savepng --events --outputdir ~/lab06-$MYGIT/
+  505  ~/lab06-$MYGIT/toygenetree.tre.rec.events.txt
+  506  cd ~/lab06-$MYGIT/toygenetree.tre.rec.events.txt
+  507  pwd
+  508  conda activate my_python27_env
+  509  python2.7 ~/tools/recPhyloXML/python/NOTUNGtoRecPhyloXML.py -g ~/lab06-$MYGIT/toygenetree.tre.rec.ntg --include.species -o ~/lab06-$MYGIT/toygenetree.tre.rec.xml
+  510  thirdkind -Iie -f ~/lab06-$MYGIT/toygenetree.tre.rec.xml -o  ~/lab06-$MYGIT/toygenetree.tre.rec.svg
+  511  convert -density 300 ~/lab06-$MYGIT/toygenetree.tre.rec.svg  ~/lab06-$MYGIT/toygenetree.tre.rec.pdf
+  512  nw_display ~/lab05-$MYGIT/species.tre
+  513  cd ~/lab06-$MYGIT/globins
+  514  ls ~/lab06-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile 
+  515  gotree prune -i ~/lab06-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile -o ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile H.sapiens_HBG1_hemoglobin_subunit_gamma1 H.sapiens_HBG2_hemoglobin_subunit_gamma2 H.sapiens_HBB_hemoglobin_subunit_beta H.sapiens_HBD_hemoglobin_subunit_delta
+  516  mkdir ~/lab06-$MYGIT/RuvB-like
+  517  cp ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile
+  518  cp ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile
+  519  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -s ~/lab05-$MYGIT/species.tre -g ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile --reconcile --speciestag prefix --savepng --events --outputdir ~/lab06-$MYGIT/globins/
+  520  nw_display ~/lab05-$MYGIT/species.tre
+  521  grep NOTUNG-SPECIES-TREE ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile.rec.ntg | sed -e "s/^\[&&NOTUNG-SPECIES-TREE//" -e "s/\]/;/" | nw_display -
+  522  python2.7 ~/tools/recPhyloXML/python/NOTUNGtoRecPhyloXML.py -g ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile.rec.ntg --include.species
+  523  thirdkind -Iie -D 40 -f ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile.rec.ntg.xml -o  ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile.rec.svg
+  524  convert  -density 150 ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile.rec.svg ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile.rec.pdf
+  525  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -s ~/lab05-$MYGIT/species.tre -g ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile --reconcile --speciestag prefix --savepng --events --outputdir ~/lab06-$MYGIT/RuvB-like/
+  526  python2.7 ~/tools/recPhyloXML/python/NOTUNGtoRecPhyloXML.py -g ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile.rec.ntg --include.species -o ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile.rec.xml
+  527  thirdkind -Iie -f ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile.rec.xml -o ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile.rec.svg
+  528  convert -density 150 ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile.rec.svg ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologs.al.mid.treefile.rec.pdf
+  529  history > lab6.commandhistory.txt
+  530  cd ~/lab06-$MYGIT
+  531  find . -size +8M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  532  git add .
+  533  git status
+  534  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  535  git pull --no-edit
+  536  git push
+  537  cd ~/lab06-$MYGIT
+  538  find . -size +8M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  539  git add .
+  540  git status
+  541  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  542  cd ~/lab06-$MYGIT
+  543  find . -size +8M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  544  git add .
+  545  git status
+  546  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  547  git pull --no-edit
+  548  git push
+  549  hello world
+  550  cd ~/lab06-$MYGIT/globins/
+  551  echo  -e "~/lab05-$MYGIT/species.tre \n ~/lab06-$MYGIT/globins/globins.homologsf.pruned.treefile" > batch.txt
+  552  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -b batch.txt --reconcile --speciestag prefix --phylogenomics
+  553  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -b batch.txt --reconcile --speciestag prefix --phylogenomics
+  554  mlr --inidx --ifs "\t" --opprint cat batch.txt.species.tre.geneCount.txt | tail -n +2 | less -S
+  555  cd ~/lab06-$MYGIT/RuvB-like/
+  556  echo -e "~/lab05-$MYGIT/species.tre \n ~/lab06-$MYGIT/RuvB-like/RuvB-like.homologsf.pruned.treefile" > batch.txt
+  557  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -b batch.txt --reconcile --speciestag prefix --phylogenomics
+  558  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -b batch.txt --reconcile --speciestag prefix --phylogenomics
+  559  mlr --inidx --ifs "\t" --opprint cat batch.txt.species.tre.geneCount.txt | tail -n +2 | less -S
+  560  java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -b batch.txt --reconcile --speciestag prefix --phylogenomics
+  561  mlr --inidx --ifs "\t" --opprint cat batch.txt.species.tre.geneCount.txt | tail -n +2 | less -S
+  562  git clone https://github.com/Bio312/lab08-$MYGIT
+  563  cd lab08-$MYGIT
+  564  ls
+  565  pwd
+  566  mkdir ~/lab08-$MYGIT/globins && cd ~/lab08-$MYGIT/globins
+  567  sed 's/*//' ~/lab04-$MYGIT/globins/globins.homologs.fas > ~/lab08-$MYGIT/globins/globins.homologs.fas
+  568  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  569  our instance is running on EC2 and log in via ssh.
+  570  “” “”
+  571  Clone Lab 8
+  572  You only need to do this ONE time.
+  573  On the command line, clone the lab 8 repository.
+  574  git clone https://github.com/Bio312/lab08-$MYGIT
+  575  You may be asked to enter your GitHub username and password. Git will now clone a copy of today's lab into a folder called lab08-$MYGIT (where $MYGIT is your GitHub username). Go there:
+  576  cd lab08-$MYGIT
+  577  Take a look at what is in the folder using the ls command. At the end of the lab, you will push the changes and files back into the online repository.
+  578  Do all the work for this lab in this new folder you have cloned. Check this at any time by typing pwd.
+  579  You should also edit the README.md within the instance.
+  580  This is our last week working on primary analysis for your research paper. Today, we are working on protein domain prediction, which will be a useful addition to your research paper. This will conclude all of the primary analysis that is required for your research projects. In future labs, we may re-visit some of our previous results.
+  581  Today's data analysis lab should be short. However, the rest of the time will be spent on Part 2: writing your results section. During that time, you will be working on developing and writing your results section.
+  582  2. Domain Identification for globins Proteins
+  583  We will be using RPS-BLAST to idenfity Pfam domains within our protein sequences. Please read about RPS-BLAST, and especially about Pfam.
+  584  Input Protein Sequences
+  585  We need to use unaligned protein sequence.
+  586  We will use globins.homologs.fas, which were our original, unaligned sequences from lab 4.
+  587  First, make a directory for the globins sequences, and change into that directory:
+  588  mkdir ~/lab08-$MYGIT/globins && cd ~/lab08-$MYGIT/globins
+  589  Let's make a copy of our raw unaligned sequence, removing the asterisk (stop codon) in the process. To do this, we will use sed's substitute command to substitute any instance of an asterisk with nothing. We'll direct the ouput to our globins folder in lab8:
+  590  sed 's/*//' ~/lab04-$MYGIT/globins/globins.homologs.fas > ~/lab08-$MYGIT/globins/globins.homologs.fas
+  591  The Pfam database is already downloaded on your instance.
+  592  The Pfam database has alrady been downloaded to ~/data/Pfam/. It contains models that enable "functional analysis of proteins by classifying them into families and predicting domains and important sites. "
+  593  Run RPS-BLAST
+  594  Here is the command to run rps blast:
+  595  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  596  “”[Github] Please take a look at the output. What do you see? Describe it here.
+  597  The table shows a whole list of proteins with numerical values assigned to each along with a family classification
+  598  “”[Github] Note the e-value. How does adjusting the e-value to 0.1 affect the domains that are outputted?
+  599  You should use an evalue of .0000000001 to answer the Brightspace questions about the globin genes. However, you may need to adjust this for your own gene family.
+  600  Plot the predicted Pfam domains on the phylogeny.
+  601  We will use our final gene tree from lab 5. Let's copy it over here, as well:
+  602  cp ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/globins
+  603  We are going to use a script that Dr. Rest wrote in R to plot the pfam domain predictions from rps-blast next to their cognate protein on the phylogeny.
+  604  On the left hand side of the plot, the package ggtree will plot the phylogeny.
+  605  On the right hand side of the plot, the package drawProteins will plot the pfam domains we detected with rps-blast.
+  606  The script that Dr. Rest wrote, called plotTreeAndDomains.r, was included when you cloned your lab.
+  607  Here are the parts of the script. These must be provided in order:
+  608  Rscript: The Rscript program allows you to run an R script from the command line, without opening up the R console.
+  609  --vanilla: This command flag indicates to R not save or restore a workspace or previous settings.
+  610  plotTreeAndDomains.r: The script that Dr. Rest wrote. You can take a look at it using less, for example.
+  611  Now provide the names of three files, in order: tree file, rps-blast output, and the name of the output file that you want. For example:
+  612  ~/lab05-$MYGIT/globins/globins.homologs.al.mid.treefile: Our midpoint rooted tree file for the globins proteins.
+  613  ~/lab08-$MYGIT/globins/globins.rps-blast.out: Our predicted pfram domains from rps-blast.
+  614  ~/lab08-$MYGIT/globins/globins.tree.rps.pdf: The name of the output pdf file we will create.
+  615  Now, run the script:
+  616  Rscript  --vanilla ~/lab08-$MYGIT/plotTreeAndDomains.r ~/lab08-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/globins/globins.rps-blast.out ~/lab08-$MYGIT/globins/globins.tree.rps.pdf
+  617  In the output pdf, you should see the predicted domains annotated by the tips of your tree. You should also see a legend with the names of all the PFAM domains. Note: If some proteins are missing any predicted domains, it likely may be due to mismatches between the label on your tree and the label in the domain annotations. You can fix this manually.
+  618  For your own gene family, if there are formatting issues, let us know and we may be able to help you adjust the script so that the graphic looks better.
+  619  “”[Github] This file should be part of your remote repository.
+  620  Looking at the predited domains in more detail
+  621  We will be focusing on predictions in the Pfam database. You can look up these Pfam domain descriptions on the Pfam website.
+  622  There are two type of files you could look at now to try and make sense of these domains:
+  623  The tab delimited annotations in globins.rps-blast.out. Use less to look at it, put it in a spreadsheet program, or here is a nice way to look at it:
+  624  mlr --inidx --ifs "\t" --opprint  cat ~/lab08-$MYGIT/globins/globins.rps-blast.out | tail -n +2 | less -S
+  625  The domain-on-tree graphic that you just produced using Rests's R script.
+  626  “”[Brightspace] 1. What is the order of the columns in the file ~/lab08-$MYGIT/globins/globins.rps-blast.out? Hint: see the command that was used to produce these results.
+  627  Examine the distribution of Pfam domains across proteins.
+  628  “”[Brightspace] 2. Which proteins have no annotation?
+  629  Here's an easy command to do this at the command line, if you don't feel like counting by hand:
+  630  cut -f 1 ~/lab08-$MYGIT/globins/globins.rps-blast.out | sort | uniq -c
+  631  “”[Brightspace] 3. Which Pfam domain annotation is most commonly found?
+  632  Here's an easy command to do this at the command line, if you don't feel like counting by hand:
+  633  cut -f 6 ~/lab08-$MYGIT/globins/globins.rps-blast.out | sort | uniq -c
+  634  “”
+  635  [Brightspace] 4. Which protein has the longest annotated protein domain?
+  636  Here's an easy command to do this at the command line, if you don't feel like calculating by hand:
+  637  awk '{a=$4-$3;print $1,'\t',a;}' ~/lab08-$MYGIT/globins/globins.rps-blast.out |  sort  -k2nr
+  638  “”[Brightspace] 5. Which protein has the shortest annotated protein domain?
+  639  The sort program.
+  640  We have already used the sort command in the above examples. Let's learn a bit more about it.
+  641  Use man sort to read the manual for this command. (or use google)
+  642  “”[Brightspace] 6. Match the command flag with what it does to the sort program.
+  643  E-values of protein domain hits
+  644  “”[Brightspace] 7. Which protein has a domain annotation with the best e-value?
+  645  Here's a command to pull out just the e-values:
+  646  cut -f 1,5 -d $'\t' ~/lab08-$MYGIT/globins/globins.rps-blast.out 
+  647  3. Work on your own gene family: Motif and Domain Identification Using RPS-BLAST and Pfam
+  648  Use the RPS-BLAST program to scan proteins in your gene family. Carefully follow the example of the globins genes, making changes as necessary to reflect the names and locations of your files.
+  649  To keep organized, please make a folder for your gene family.
+  650  “”[Github] What is the name of the unaligned sequence file from lab 4 that you will be using as input from rps-blast (after removing stop codons)?
+  651  “”[Github] Keep track of all the commands that you used here! (i.e. cut and paste them here, so you could recreate your work!).
+  652  “”[Github] Provide at least one citation that you used to read about the domains that you expect to be present in your gene family. What domains does the citation indicate will be there? Did you detect them?
+  653  “”[Github] If not all domains were present that you expect, or if more domains are present than you expect, you might adjust the e-value cutoff for your rps-blast search. Describe the changes to your e-value and how it affected the search. Justify how to made this decision.
+  654  “”[Github] What is the name of the midpoint (or other) rooted tree file that you will be using as your phylogeny for producing the phylogeny and domain content figure?
+  655  “”[Github] Examine the pdf plot of your gene tree and domain annotations. This pdf should be part of your repository. If there are graphical or layout problems with the graphic, describe them here. Consult the TA or Dr. Rest for help.
+  656  “”[Github] Which gene has the most pfam domains?
+  657  “”[Github] Which pfam domains are found in the most genes?
+  658  “”[Github] Are any pfam domains found multiple times in a single gene?
+  659  “”[Github] Which gene has the longest pfam domain annotation? When domain is this?
+  660  “”[Github] Which domain annotations has the best e-value?
+  661  “”[Github] Compare the domains in different lineages of interest for your paper. Are the predictions different or similar?
+  662  “”[Github]
+  663  Are there some gene copies that have all the domains, and others that are missing some domains? What does this suggest about the function of your gene family in some lineages we are studying?
+  664  “”[Github] Is there any evidence that some gene copies have gained or lost function in some lineages?
+  665  4. Save your history and push your files into the repository.
+  666  Save your history:
+  667  history > lab8.commandhistory.txt
+  668  Push any new files to the remote Git repository.
+  669  Add all of your results to the repository, commit them, and push them to the remote repository at GitHub.com
+  670  First, ensure you are in the main lab5 directory:
+  671  cd ~/lab08-$MYGIT
+  672  Now, commit your changes. Make sure each line works before you continue with the next line.
+  673  git add .
+  674  Take a look to see which changes have been staged, which haven’t, and if any files aren’t being tracked by Git.
+  675  git status
+  676  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  677  git pull --no-edit
+  678  Did all of the above work? Make sure! If so, then run the following command:
+  679  git push 
+  680  5. Writing your results section.
+  681  Today, you will work on writing your results section for your research paper.
+  682  In your results section, you will describe the outcomes of your analyses. Supplement your description with figures and tables, and refer to these in your text.  
+  683  Your results section should have:
+  684  Clear and complete narrative description, point by point, of each result. Walk the reader through the results, what they mean, and how they are to be interpreted.
+  685  Accurate and scientifically sound interpretation of your results using appropriate technical terms.
+  686  At least two figures and/or tables that appropriately illuminate the results. Relevant figures or tables from your analysis are placed either on separate pages after the main text or within the text. Figures are numbered consecutively, and each figure is accompanied with a legend. Figure are referred to directly in the main text. Axes are labeled with units. Tables should be numbered consecutively, referred to directly in the main text, and each table should include a title.  Example: “Our results strongly suggest that Gremlin production increases as an exponential function of the number of times Mogwai are fed after midnight (Figure 1).”
+  687  A legend is written for each figure. A legend is a complete description of the figure and can stand alone from the text.
+  688  Just provide the main results that shed light onto your research question. Not every detail. Keep focused on your research question as described in your Introduction (and adjust your question, if necessary).
+  689  Your results section may include:
+  690  How many homologs? Average percent identity. Length of the alignment.
+  691  Where did gene copy number change? Describe copy number changes (# of duplications and losses) across different lineages in a way that addresses your question. Note any other major changes in gene copy number.
+  692  Description of changes in domain content.
+  693  Required Figures
+  694  Midpoint (or other) rooted gene tree, with bootstrap support values and domain content
+  695  Gene tree: notung reconciliation displayed via thirdkind
+  696  Other possible figures
+  697  Optional: Gene tree notung reconciliation, if you have a specific reason to include this.
+  698  Suggested: your domain/tree figure from this lab.
+  699  Optional: a part of your protein alignment that demonstrates a point you want to make.
+  700  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  701  pwd
+  702  cd lab08-$MYGIT
+  703  cd lab08-$MYGIT
+  704  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .1
+  705  cp ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/globins
+  706  mlr --inidx --ifs "\t" --opprint  cat ~/lab08-$MYGIT/globins/globins.rps-blast.out | tail -n +2 | less -S
+  707  cut -f 1 ~/lab08-$MYGIT/globins/globins.rps-blast.out | sort | uniq -c
+  708  cut -f 6 ~/lab08-$MYGIT/globins/globins.rps-blast.out | sort | uniq -c
+  709  awk '{a=$4-$3;print $1,'\t',a;}' ~/lab08-$MYGIT/globins/globins.rps-blast.out |  sort  -k2nr
+  710  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  711  awk '{a=$4-$3;print $1,'\t',a;}' ~/lab08-$MYGIT/globins/globins.rps-blast.out |  sort  -k2nr
+  712  cut -f 1,5 -d $'\t' ~/lab08-$MYGIT/globins/globins.rps-blast.out 
+  713  mkdir ~/lab08-$MYGIT/RuvB-like && cd ~/lab08-$MYGIT/RuvB-like
+  714  sed 's/*//' ~/lab04-$MYGIT/RuvB-like/RuvB-likesed 's/*//' ~/lab04-$MYGIT/globins/globins.homologs.fas > ~/lab08-$MYGIT/globins/globins.homologs.fas.homologs.fas > ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas
+  715  sed 's/*//' ~/lab04-$MYGIT/RuvB-like/RuvB-like sed 's/*//' ~/lab04-$MYGIT/globins/globins.homologs.fas > ~/lab08-$MYGIT/globins/globins.homologs.fas.homologs.fas > ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas
+  716  sed 's/*//' ~/lab04-$MYGIT/RuvB-like/RuvB-like.homologs.fas > ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas
+  717  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  718  cp ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/RuvB-like
+  719  cp ~/lab05-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile ~/lab08-$MYGIT/RuvB-like
+  720  Rscript  --vanilla ~/lab08-$MYGIT/plotTreeAndDomains.r ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologsf.al.mid.treefile ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out ~/lab08-$MYGIT/RuvB-like/RuvB-like.tree.rps.pdf
+  721  mlr --inidx --ifs "\t" --opprint  cat ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out | tail -n +2 | less -S
+  722  cut -f 1 ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out | sort | uniq -c
+  723  cut -f 6 ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out | sort | uniq -c
+  724  cut -f 1,5 -d $'\t' ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out
+  725  cut -f 6 ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out | sort | uniq -c
+  726  cd ~/lab08-$MYGIT
+  727  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  728  git add .
+  729  cd ~/lab08-$MYGIT
+  730  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  731  git add .
+  732  git status
+  733  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  734  git pull --no-edit
+  735  git push
+  736  gunzip GCF_000027325.1_ASM2732v1_genomic.fna.gz   
+  737  git clone https://github.com/Bio312/lab09-$MYGIT
+  738  cd lab09-$MYGIT
+  739  fasterq-dump --split-files ERR486857
+  740  less -S ERR486857_1.fastq
+  741  sickle pe -f ERR486857_1.fastq -r ERR486857_2.fastq -t sanger -o trimmed_ERR486857_1.fastq -p trimmed_ERR486857_2.fastq  -s trimmed_singles_file.fastq
+  742  spades.py -1 trimmed_ERR486857_1.fastq -2 trimmed_ERR486857_2.fastq -o assembly --only-assembler
+  743  mkdir genomes && cd genomes
+  744  wget ftp://ftp.ncbi.nih.gov/genomes/refseq/vertebrate_mammalian/Homo_sapiens/all_assembly_versions/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.fna.gz && gunzip GCF_000001405.39_GRCh38.p13_genomic.fna.gz
+  745  less ~/lab09-$MYGIT/genomes/GCF_000001405.39_GRCh38.p13_genomic.fna
+  746  git pull --no-editgunzip GCF_000027325.1_ASM2732v1_genomic.fna.gz   
+  747  less ~/lab09-$MYGIT/genomes/GCF_000027325.1_ASM2732v1_genomic.fna
+  748  mkdir genomes && cd genomes
+  749  wget ftp://ftp.ncbi.nih.gov/genomes/refseq/vertebrate_mammalian/Homo_sapiens/all_assembly_versions/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.fna.gz && gunzip GCF_000001405.39_GRCh38.p13_genomic.fna.gz
+  750  less ~/lab09-$MYGIT/genomes/GCF_000001405.39_GRCh38.p13_genomic.fna
+  751  wget ftp://ftp.ncbi.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_genomic.fna.gz  && gunzip GCF_000027325.1_ASM2732v1_genomic.fna.gz   
+  752  less ~/lab09-$MYGIT/genomes/GCF_000027325.1_ASM2732v1_genomic.fna
+  753  wget ftp://ftp.ncbi.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_genomic.fna.gz  && gunzip GCF_000027325.1_ASM2732v1_genomic.fna.gz   
+  754  less ~/lab09-$MYGIT/genomes/GCF_000027325.1_ASM2732v1_genomic.fna
+  755  cd ~/lab09-$MYGIT/
+  756  quast.py --large  ~/lab09-$MYGIT/genomes/GCF_000001405.39_GRCh38.p13_genomic.fna --min-contig 0 --threads 2 -o ~/lab09-$MYGIT/quast_human
+  757  quast.py --large ~/lab09-$MYGIT/genomes/GCF_000027325.1_ASM2732v1_genomquast.py --large ~/lab09-$MYGIT/genomes/GCF_000027325.1_ASM2732v1_genomic
+  758  quast.py --large ~/lab09-$MYGIT/genomes/GCF_000027325.1_ASM2732v1_genomic.fna   --min-contig 0 --threads 2 -o ~/lab09-$MYGIT/quast_myco_NCBI
+  759  ls /home/bio312-user/lab09-s2-pzampieron/genomes/GCF_000027325.1_ASM2732v1_genomic.fna
+  760  wget ftp://ftp.ncbi.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_genomic.fna.gz
+  761  gunzip GCF_000027325.1_ASM2732v1_genomic.fna.gz
+  762  quast.py --large ~/lab09-s2-pzampieron/genomes/GCF_000027325.1_ASM2732v1_genomic.fna --min-contig 0 --threads 2 -o ~/lab09-s2-pzampieron/quast_myco_NCBI
+  763  ls /home/bio312-user/lab09-s2-pzampieron/genomes/
+  764  ls ~/lab09-s2-pzampieron/genomes/
+  765  ls -l ~/lab09-s2-pzampieron/genomes/GCF_000027325.1_ASM2732v1_genomic.fna
+  766  chmod +r ~/lab09-s2-pzampieron/genomes/GCF_000027325.1_ASM2732v1_genomic.fna
+  767  ls ~/lab09-s2-pzampieron/genomes/GCF_000027325.1_ASM2732v1_genomic.fna.gz
+  768  wget ftp://ftp.ncbi.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_genomic.fna.gz -P ~/lab09-s2-pzampieron/genomes/
+  769  gunzip ~/lab09-s2-pzampieron/genomes/GCF_000027325.1_ASM2732v1_genomic.fna.gz
+  770  ls ~/lab09-s2-pzampieron/genomes/
+  771  quast.py --large ~/lab09-s2-pzampieron/genomes/GCF_000027325.1_ASM2732v1_genomic.fna --min-contig 0 --threads 2 -o ~/lab09-s2-pzampieron/quast_myco_NCBI
+  772  ls ~/lab09-s2-pzampieron/quast_myco_NCBI
+  773  quast.py --large ~/lab09-$MYGIT/assembly/scaffolds.fasta   --min-contig 0 --threads 2 -o ~/labs/lab09-$MYGIT/quast_myco_spades
+  774  history > lab9.commandhistory.txt
+  775  cd ~/lab09-$MYGIT
+  776  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  777  git add .
+  778  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  779  git pull --no-edit
+  780  git push
+  781  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  782  cut -f1 ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out | sort | uniq -c
+  783  grep -v ">" RuvB-like.homologs.aligned.fasta | tr -d '\n' | wc -c
+  784  cut -f6 ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out | sort | uniq -c
+  785  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  786  no
+  787  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  788  cd ~/lab08-$MYGIT/RuvB-like
+  789  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  790  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/Ruvb-like/Ruvb-likes.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  791  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/RuBb-like/RuBb-liks.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  792  rpsblast -query ~/lab08-$MYGIT/RuvB-like/RuvB-like.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/RuvB-like/RuvB-like.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  793  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  794  cd lab08-$MYGIT
+  795  cd lab08-$MYGIT
+  796  ls
+  797  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  798  pwd
+  799  cd globinx
+  800  cd globins
+  801  rpsblast -query ~/lab08-$MYGIT/globins/globins.homologs.fas -db ~/data/Pfam/Pfam -out ~/lab08-$MYGIT/globins/globins.rps-blast.out  -outfmt "6 qseqid qlen qstart qend evalue stitle" -evalue .0000000001
+  802  cd lab 08
+  803  grep ">" RuvB-like.homologs.al.fas | cut -d"_" -f1 | sort | uniq -c
+  804  pwd
+  805  ls
+  806  find . -name "RuvB-like.homologs.al.fas"
+  807  grep ">" /path/to/RuvB-like.homologs.al.fas | cut -d"_" -f1 | sort | uniq -c
+  808  grep ">" /path/to/RuvB-like.homologs.fas | cut -d"_" -f1 | sort | uniq -c
+  809  grep ">" RuvB-like.homologs.al.fas | cut -d"_" -f1 | sort | uniq -c
+  810  git clone https://github.com/Bio312/lab10-$MYGIT 
+  811  cd ~/lab10-$MYGIT
+  812  cd fastq-files
+  813  fasterq-dump SRR1297272
+  814  fasterq-dump SRR1297281
+  815  less SRR1297281.fastq
+  816  c SRR1297281.fastq
+  817  fastqc SRR1297281.fastq
+  818  wkhtmltopdf  --print-media-type SRR1297281_fastqc.html SRR1297281_fastqc.pdf
+  819  java -jar ~/tools/trimmomatic.jar SE -phred33 SRR1297272.fastq SRR1297272.trimmed.fastq  LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+  820  java -jar ~/tools/trimmomatic.jar  SE -phred33 SRR1297281.fastq SRR1297281.trimmed.fastq  LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+  821  cd ~/lab10-$MYGIT/genome
+  822  wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/209/225/GCF_000209225.1_ASM20922v1/GCF_000209225.1_ASM20922v1_genomic.fna.gz && gunzip GCF_000209225.1_ASM20922v1_genomic.fna.gz
+  823  wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/209/225/GCF_000209225.1_ASM20922v1/GCF_000209225.1_ASM20922v1_genomic.gff.gz && gunzip GCF_000209225.1_ASM20922v1_genomic.gff.gz
+  824  hisat2-build ~/lab10-$MYGIT/genome/GCF_000209225.1_ASM20922v1_genomic.fna nemat_genome_index
+  825  cd ~/lab10-$MYGIT/mapping
+  826  hisat2  -U ../fastq-files/SRR1297272.trimmed.fastq -S SRR1297272.sam -x ../genome/nemat_genome_index  -p 2
+  827  hisat2  -U ../fastq-files/SRR1297281.trimmed.fastq -S SRR1297281.sam -x ../genome/nemat_genome_index  -p 2
+  828  samtools sort SRR1297281.sam -O BAM > SRR1297281.bam 
+  829  samtools index SRR1297281.bam
+  830  samtools sort SRR1297272.sam -O BAM > SRR1297272.bam
+  831  samtools index SRR1297272.bam
+  832  history > lab8.commandhistory.txt
+  833  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  834  git add .
+  835  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  836  git pull --no-edit
+  837  git push
+  838  cd ~/lab10-$MYGIT/diffexp
+  839  conda activate cufflinks_env
+  840  cuffdiff ../genome/GCF_000209225.1_ASM20922v1_genomic.gff ../mapping/SRR1297281.bam ../mapping/SRR1297272.bam -L control,copper -p 2
+  841  grep -c yes gene_exp.diff
+  842  sort -k13 gene_exp.diff | mlr --inidx --ifs "\t" --opprint cat  | tail -n +2 | less -S
+  843  grep LOC5514051 gene_exp.diff
+  844  cd ~/lab10-$MYGIT 
+  845  Rscript volcano.R
+  846  history > lab8.commandhistory.txt
+  847  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  848  git add .
+  849  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  850  git pull --no-edit
+  851  git push
+  852  grep LOC5514051 gene_exp.diff
+  853  gene-LOC5514051 gene-LOC5514051 LOC5514051 NW_001834353.1:692852-737970 control copper OK 3.03527 3.06097 0.0121607 0.0153827 0.9871 0.997835 no
+  854  >seq1
+  855  GATGA
+  856  is this nano
+  857  nano
+  858  cd
+  859  pwd
+  860  nano seq1.fas
+  861  nano seq2.fas
+  862  cat seq1.fas
+  863  cat seq2.fas
+  864  stretcher -asequence seq1.fas -bsequence seq2.fas -gapopen 8 -gapextend 8 -outfile result.fas
+  865  cd
+  866  pwd
+  867  git clone https://github.com/s2-pzampieron/Bio312-Final_Repository-s2-pzampieron.git
+  868  pwd
+  869  cp /home/bio312-user/lab04-s2-pzampieron/RuvB-like/RuvB-like.homologs.fas /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  870  cp /home/bio312-user/lab05-s2-pzampieron/RuvB-like/RuvB-like.homologsf.al.mid.treefile /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  871  cp /home/bio312-user/lab06-s2-pzampieron/RuvB-like/RuvB-like.reconciliation.thirdkind.xml /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  872  cp /home/bio312-user/lab08-s2-pzampieron/RuvB-like/RuvB-like.rps-blast.out /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  873  cd /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  874  cp /home/bio312-user/lab04-s2-pzampieron/RuvB-like/RuvB-like.homologs.fas.pdf /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  875  cp /home/bio312-user/lab04-s2-pzampieron/RuvB-like/RuvB-like.homologs.fas.pdf/home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  876  cp /home/bio312-user/lab04-s2-pzampieron/RuvB-like/RuvB-like.homologs.al.fas.pdf/home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  877  cp /home/bio312-user/lab04-s2-pzampieron/RuvB-like/RuvB-like.homologs.al.fas.pdf /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  878  cp /home/bio312-user/lab05-s2-pzampieron/RuvB-like/RuvB-like.homologsf.al.midCl.treefile.pdf /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  879  cd /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  880  cp /home/bio312-user/lab08-s2-pzampieron/RuvB-like/RuvB-like.tree.rps.pdf  /home/bio312-user/Bio312-Final_Repository-s2-pzampieron/
+  881  ls
+  882  cd lab04-s2-pzampieron
+  883  cd ~lab04-s2-pzampieron
+  884  cd
+  885  git clone https://github.com/Bio312/lab12-$MYGIT 
+  886  cd ~/lab12-$MYGIT
+  887  nano ~/lab12-$MYGIT/input.fasta
+  888  R --vanilla
+  889  python
+  890  git add .
+  891  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  892  git add .
+  893  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  894  git pull --no-edit
+  895  git push 
+  896  cd ~/lab03-$MYGIT
+  897  cd ~/lab03-$MYGIT/ruvB-like
+  898  cp -r * ~/Bio312-Final_Repository-$MYGIT/
+  899  cd
+  900  git clone https://github.com/Bio312/lab13-$MYGIT 
+  901  cd ~/lab13-$MYGIT
+  902  R --vanilla
+  903  nano ~/lab13-$MYGIT/input.fasta
+  904  cd ~/lab13-$MYGIT
+  905  R --vanilla
+  906  cd ~/lab13-$MYGIT
+  907  git add .
+  908  git status
+  909  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  910  git pull --no-edit
+  911  git push
+  912  cp -r * ~/Bio312-Final_Repository-$MYGIT/
+  913  cd  ~/Bio312-Final_Repository-$MYGIT/
+  914  cp -r * ~/Bio312-Final_Repository-$MYGIT/
+  915  cd * ~/Bio312-Final_Repository-$MYGIT/
+  916  cd ~/Bio312-Final_Repository-$MYGIT/
+  917  pwl
+  918  lp
+  919  cd ~/lab05-pzampieron/RuvB-like
+  920  cp -r * ~/Bio312-Final_Repository-$MYGIT/
+  921  cd ~/Bio312-Final_Repository-$MYGIT/
+  922  history > Bio312-Final_Repository.commandhistory.txt

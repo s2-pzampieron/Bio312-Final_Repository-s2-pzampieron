@@ -1,0 +1,2 @@
+GT name	Candidates	Feasible	Saved	Score
+RuvB-like.homologs.al.mid.treefile	1	1	1	36.0

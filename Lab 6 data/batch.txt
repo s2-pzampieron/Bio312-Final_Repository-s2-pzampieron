@@ -1,0 +1,2 @@
+/home/bio312-user/lab05-s2-pzampieron/species.tre 
+/home/bio312-user/lab06-s2-pzampieron/RuvB-like/RuvB-like.homologs.al.mid.treefile
